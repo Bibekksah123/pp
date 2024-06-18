@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ 
+<div class="contain">
+
+</div>
+ 
+  <script>
+    // let arr=[2,4,5,2];
+    // console.log(arr);
+    // Function to calculate the factorial of a number
+// function factorial(n) {
+//   if (n === 0 || n === 1) {
+//     return 1;
+//   } else {
+//     return n * factorial(n - 1);
+//   }
+// }
+
+// // Function to find the maximum number in an array
+// function findMax(arr) {
+//   var max = -Infinity;
+//   for (var i = 0; i <= arr.length; i++) {
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   return max;
+// }
+
+// // Function to reverse a string
+// function reverseString(str) {
+//   return str.split('').reverse().join('');
+// }
+
+// // Sample inputs
+// console.log(factorial(5)); // Should print 120
+// console.log(findMax([1, 3, 7, 2, 5])); // Should print 7
+// console.log(reverseString("hello")); // Should print "olleh"
+// let arr=['hello'];
+// console.log(arr.reverse().join('').split());
+
+let arr=['youtuber','hey'];
+let count=0;
+let show=arr[count];
+function showtext(){
+  let h=document.querySelector('.contain');
+    h.innerHTML=`<h1>i am ${show.slice(0,count)}</h1>`;
+    count++;
+setInterval(showtext,400)
+
+  
+}
+showtext();
+// function reverstes(str){
+//   return str.split('').reverse().join('');
+  
+// }
+// console.log(reverstes('hello'));
+
+  </script>
+</body>
+</html>
